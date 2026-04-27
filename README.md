@@ -107,7 +107,7 @@ Runtime panelde asagidaki bilgiler gorunur:
 - `tag(hex)`
 - `hash(hex)`
 
-## Yeni Degisiklikler (Nisan 2026)
+## Yeni Degisiklikler 
 
 Bu bolum mevcut yapiyi bozmadan son eklenen gelistirmeleri ozetler:
 
