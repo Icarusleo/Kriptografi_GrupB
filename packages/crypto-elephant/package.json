@@ -1,0 +1,10 @@
+{
+  "name": "@toolkit/crypto-elephant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build:wasm": "powershell -ExecutionPolicy Bypass -File ./scripts/build-wasm.ps1"
+  }
+}

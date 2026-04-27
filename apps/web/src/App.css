@@ -1,0 +1,115 @@
+.page {
+  padding: 1.25rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 170px minmax(900px, 1fr) 360px;
+  gap: 1rem;
+  align-items: stretch;
+  min-height: calc(100vh - 120px);
+}
+
+.panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.05);
+}
+
+.palette-item {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+  cursor: grab;
+}
+
+.palette-item:active {
+  cursor: grabbing;
+}
+
+.flow-wrapper {
+  min-height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #dbe1ea;
+  background: #f8fafc;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.flow-node {
+  min-width: 190px;
+  border: 1px solid #dbe1ea;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  padding: 0.65rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.flow-node strong {
+  font-size: 0.9rem;
+}
+
+.flow-node small {
+  color: #64748b;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+
+.flow-node input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.flow-node .react-flow__handle {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  background: #2563eb;
+}
+
+.runtime button {
+  border: 0;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 0.6rem 0.85rem;
+  cursor: pointer;
+}
+
+.logs {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.4rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  word-break: break-all;
+  max-height: 58vh;
+  overflow: auto;
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .flow-wrapper {
+    min-height: 60vh;
+  }
+}

@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
